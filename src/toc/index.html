@@ -11,18 +11,5 @@ title: Table of Contents
                 <p class="mt-1 text-gray-500">{{resource.templateContent | safe }}</p>
             </div>
         </div>
-        <article class="my-8">
-            <h2 class="font-bold text-3xl text-gray-900 mb-2">
-                <a href="{{ resource.url }}">
-                        {{ resource.data.name }}
-                </a>
-            </h2>
-            {% if resource.data.description %}
-                <p class="text-lg text-gray-500 mb-3">
-                    {{ resource.data.description }}
-                </p>
-            {% endif %}
-
-        </article>
     {% endfor %}
 </section>
