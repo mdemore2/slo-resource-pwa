@@ -1,10 +1,9 @@
 ---
 items:
-  - text: Menu One
-    url: "#"
-  - text: Menu Two
-    url: "#"
-  - text: Menu Three
-    url: "#"
-  - text: Blog
-    url: "/blog"
+  - text: Table of Contents
+    url: "/toc"
+  - text: Directory
+    url: "/directory"
+  - text: About
+    url: "/about"
+

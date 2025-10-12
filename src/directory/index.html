@@ -1,0 +1,30 @@
+---
+layout: default
+title: Directory
+---
+<section class="mt-15">
+    {% for organization in collections.organization %}
+        <article class="my-8">
+            <h2 class="font-bold text-3xl text-gray-900 mb-2">
+                <a href="/directory/{{ organization.data.link }}">
+                        {{ organization.data.name }}
+                </a>
+            </h2>
+            <h4>Contact Information</h4>
+            <ul>
+                <li>{{organization.data.phone}}</li>
+                <li>{{organization.data.email}}</li>
+                <li><a href="{{organization.data.website}}"></li>
+                <li>{{organization.data.location}}</li>
+                
+            </ul>
+
+            {% if organization.data.description %}
+                <p class="text-lg text-gray-500 mb-3">
+                    {{ organization.data.description }}
+                </p>
+            {% endif %}
+
+        </article>
+    {% endfor %}
+</section>
