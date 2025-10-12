@@ -11,16 +11,6 @@ title: Directory
         <div class="mx-auto max-w-md rounded-lg bg-white shadow">
           <div class="p-4">
             <a href="{{organization.url}}"><h3 class="text-xl font-medium text-gray-900">{{organization.data.name}}</h3></a>
-            <p class="mt-1 text-gray-500">{{organization.templateContent | safe }}</p>
-          </div>
-        </div>
-
-        <article class="my-8">
-            <h2 class="font-bold text-3xl text-gray-900 mb-2">
-                <a href="{{organization.url}}">
-                        {{ organization.data.name }}
-                </a>
-            </h2>
             <h4>Contact Information</h4>
             <ul>
                 <li>{{organization.data.phone}}</li>
@@ -29,13 +19,9 @@ title: Directory
                 <li>{{organization.data.location}}</li>
                 
             </ul>
+            <p class="mt-1 text-gray-500">{{organization.templateContent | safe }}</p>
+          </div>
+        </div>
 
-            {% if organization.data.description %}
-                <p class="text-lg text-gray-500 mb-3">
-                    {{ organization.data.description }}
-                </p>
-            {% endif %}
-
-        </article>
     {% endfor %}
 </section>
