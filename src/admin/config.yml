@@ -28,7 +28,7 @@ collections:
         options: ["Tags", "created", "from", "config.yml"]
   - label: "Organizations"
     name: "orgs"
-    folder: "src/_data/organizations.yaml"
+    file: "src/_data/organizations.yaml"
     create: true
     editor:
       preview: false
@@ -40,7 +40,7 @@ collections:
       - { label: "Phone", name: "phone", widget: "string" }
   - label: "Resources"
     name: "resources"
-    folder: "src/_data/resources.yaml"
+    file: "src/_data/resources.yaml"
     create: true
     editor:
       preview: false
