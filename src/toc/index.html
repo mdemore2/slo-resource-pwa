@@ -3,10 +3,10 @@ layout: default
 title: Table of Contents
 ---
 <section class="mt-15">
-    {% for resource in collections.resource %}
+    {% for resource in collections.resources %}
         <article class="my-8">
             <h2 class="font-bold text-3xl text-gray-900 mb-2">
-                <a href="/directory/{{ resource.data.link }}">
+                <a href="{{ resource.url }}">
                         {{ resource.data.name }}
                 </a>
             </h2>

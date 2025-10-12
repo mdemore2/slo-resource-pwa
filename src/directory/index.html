@@ -3,10 +3,10 @@ layout: default
 title: Directory
 ---
 <section class="mt-15">
-    {% for organization in collections.organization %}
+    {% for organization in collections.organizations %}
         <article class="my-8">
             <h2 class="font-bold text-3xl text-gray-900 mb-2">
-                <a href="/directory/{{ organization.data.link }}">
+                <a href="{{organization.url}}">
                         {{ organization.data.name }}
                 </a>
             </h2>
