@@ -27,17 +27,18 @@ collections:
         create: true
         options: ["Tags", "created", "from", "config.yml"]
   - label: "Organizations"
-    name: "orgs"
+    name: "organizations"
     folder: "src/organizations"
     create: true
     editor:
       preview: false
     fields:
       - { label: "Organization", name: "name", widget: "string" }
-      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Description", name: "description", widget: "markdown" }
       - { label: "Location", name: "location", widget: "string" }
       - { label: "Email", name: "email", widget: "string" }
       - { label: "Phone", name: "phone", widget: "string" }
+      - {label: "Website", name: "website", widget: "string"}
   - label: "Resources"
     name: "resources"
     folder: "src/resources"
@@ -46,8 +47,9 @@ collections:
       preview: false
     fields:
       - { label: "Resource", name: "name", widget: "string" }
-      - { label: "Description", name: "description", widget: "string" }
-      - { label: "Link to Directory", name: "link", widget: "string" }
+      - { label: "Description", name: "description", widget: "markdown" }
+      - { label: "Organization", name: "organization", widget: "relation", collection: "organizations", value_field: "name", search_fields: ["name"]}
+  
   - label: "Settings"
     name: "settings"
     editor:
