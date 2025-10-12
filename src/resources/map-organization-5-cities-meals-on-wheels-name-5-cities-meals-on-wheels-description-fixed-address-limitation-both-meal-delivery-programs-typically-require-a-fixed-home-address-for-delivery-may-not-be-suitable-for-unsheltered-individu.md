@@ -8,3 +8,5 @@ description: >-
   * Alternative for homeless seniors: Contact programs directly to inquire about delivery to shelters or alternative arrangements; homeless shelters can often provide mailing addresses for service coordination
 organization: 5 Cities Meals on Wheels
 ---
+* Fixed address limitation: Both meal delivery programs typically require a  fixed home address for delivery; may not be suitable for unsheltered  individuals 
+* Alternative for homeless seniors: Contact programs directly to inquire about delivery to shelters or alternative arrangements; homeless shelters can often provide mailing addresses for service coordination
